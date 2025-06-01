@@ -2532,7 +2532,7 @@ input::placeholder {
 
 @media only screen and (max-width: 640px) {
   html {
-    scroll-padding-top: 105px;
+    scroll-padding-top: 112px;
   }
 
   .container {
@@ -2595,6 +2595,10 @@ input::placeholder {
     font-size: 16px;
   }
 
+  .header.animated {
+    height: 72px;
+  }
+
   .header.animated .header__logo svg {
     width: 60px;
     height: 60px;
@@ -2614,6 +2618,11 @@ input::placeholder {
 
   .header.opened .header__logo path {
     fill: var(--color-bg) !important;
+  }
+
+  .header .container {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
   }
 
   .header__logo {
