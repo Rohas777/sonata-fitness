@@ -636,7 +636,13 @@ input::placeholder {
   left: 0;
   width: auto;
   margin: -20px;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
 }
 
 .header__nav {
@@ -2603,7 +2609,7 @@ input::placeholder {
   }
 
   .header.opened .header__line {
-    display: block;
+    opacity: 1;
   }
 
   .header.opened .header__logo path {
@@ -2617,10 +2623,6 @@ input::placeholder {
   .header__logo svg {
     width: 80px;
     height: 80px;
-  }
-
-  .header__line {
-    display: none;
   }
 
   .header__nav {
@@ -3096,6 +3098,7 @@ input::placeholder {
 
   .callback__inputs .btn {
     margin-top: 8px;
+    padding: 15px 24px !important;
   }
 
   .callback__acceptance {
