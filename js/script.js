@@ -32,6 +32,33 @@ $(document).ready(function () {
         }
     });
 
+    //=================== Бургер меню ============
+
+    $(".header__burger input").on("change", function () {
+        if ($(window).width() > 640) {
+            return;
+        }
+
+        if ($(this).is(":checked")) {
+            $(this).closest(".header").addClass("opened");
+            $(".header__nav").slideDown(300, function () {
+                $(this).css({ display: "flex" });
+            });
+        } else {
+            $(this).closest(".header").removeClass("opened");
+            $(".header__nav").slideUp(300);
+        }
+    });
+
+    $(".header__nav a").on("click", function () {
+        if ($(window).width() <= 640) {
+            $(".header__burger input").prop("checked", false);
+            $(this).closest(".header").removeClass("opened");
+            $(".header__nav").slideUp(300);
+            console.log("first");
+        }
+    });
+
     //=================== Кнопка в оффере ============
 
     function getTransformData($el) {
@@ -129,6 +156,15 @@ $(document).ready(function () {
         spaceBetween: 16,
         freeMode: false,
         watchSlidesProgress: true,
+        breakpoints: {
+            0: {
+                slidesPerView: "auto",
+                spaceBetween: 8,
+            },
+            641: {
+                slidesPerView: 4,
+            },
+        },
     });
     const aboutSlider = new Swiper(".about__slider", {
         loop: true,
@@ -146,11 +182,28 @@ $(document).ready(function () {
         },
     });
 
-    $(".about__slider").matchHeight({
-        byRow: true,
-        property: "height",
-        target: $(".about__description"),
-        remove: false,
+    if ($(window).width() <= 640) {
+        $(".about__slider").matchHeight("remove");
+    } else {
+        $(".about__slider").matchHeight({
+            byRow: true,
+            property: "height",
+            target: $(".about__description"),
+            remove: false,
+        });
+    }
+
+    $(window).on("resize", function () {
+        if ($(window).width() <= 640) {
+            $(".about__slider").matchHeight("remove");
+        } else {
+            $(".about__slider").matchHeight({
+                byRow: true,
+                property: "height",
+                target: $(".about__description"),
+                remove: false,
+            });
+        }
     });
 
     //=================== Слайдер тренеров ============
@@ -164,6 +217,10 @@ $(document).ready(function () {
             nextEl: ".trainers__slider-next",
             prevEl: ".trainers__slider-prev",
         },
+        pagination: {
+            el: ".trainers__pagination",
+            clickable: true,
+        },
     });
 
     //=================== Слайдер отзывов ============
@@ -176,6 +233,10 @@ $(document).ready(function () {
         navigation: {
             nextEl: ".reviews__slider-next",
             prevEl: ".reviews__slider-prev",
+        },
+        pagination: {
+            el: ".reviews__pagination",
+            clickable: true,
         },
     });
 

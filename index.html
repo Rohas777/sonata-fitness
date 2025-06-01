@@ -893,6 +893,66 @@
 
                 </a>
 
+                <svg
+
+                    class="header__line"
+
+                    width="1920"
+
+                    height="60"
+
+                    viewBox="0 0 1920 60"
+
+                    fill="none"
+
+                    xmlns="http://www.w3.org/2000/svg"
+
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+
+                >
+
+                    <g opacity="0.4">
+
+                        <rect width="1920" height="60" fill="url(#pattern0_14_472)" />
+
+                    </g>
+
+                    <defs>
+
+                        <pattern
+
+                            id="pattern0_14_472"
+
+                            patternUnits="userSpaceOnUse"
+
+                            viewBox="-778 525 99 14.56"
+
+                            width="25.420311620610303%"
+
+                            height="119.63466221451262%"
+
+                            x="713.5"
+
+                            patternContentUnits="objectBoundingBox"
+
+                        >
+
+                            <g id="pattern0_14_472_inner">
+
+                                <rect x="-877" y="525" width="100" height="8" fill="#4E4A49" />
+
+                                <rect x="-877" y="535" width="100" height="3" fill="#4E4A49" />
+
+                            </g>
+
+                            <use xlink:href="#pattern0_14_472_inner" transform="translate(99 0)" />
+
+                        </pattern>
+
+                    </defs>
+
+                </svg>
+
                 <nav class="header__nav">
 
                     <ul>
@@ -930,6 +990,18 @@
                     </a>
 
                 </nav>
+
+                <label for="check" class="header__burger">
+
+                    <input type="checkbox" id="check" />
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </label>
 
             </div>
 
@@ -1450,11 +1522,11 @@
                         <a href="" data-modal-open="modal-1">
                             <span>Записаться <br />на тренировку</span>
                         </a>
-                        <img src="../images/offer.png" alt="" />
+                        <img src="../images/offer2.png" alt="" />
                     </div>
                 </div>
             </section>
-            <section class="about dark">
+            <section id="about" class="about dark">
                 <div class="container">
                     <img class="about__bg" src="../images/bg/about.png" alt="" />
                     <div class="about__slider swiper">
@@ -1529,7 +1601,7 @@
                     </div>
                 </div>
             </section>
-            <section class="trainers">
+            <section id="trainers" class="trainers">
                 <img class="trainers__bg" src="../images/bg/trainers.png" alt="" />
                 <div class="trainers__description">
                     <div class="trainers__text">
@@ -1578,92 +1650,103 @@
                         <div class="trainers__slide swiper-slide" data-modal-open="modal-1" data-trainer="1">
                             <a href="" class="trainers__slide-link"></a>
                             <img src="../images/trainer.png" alt="" />
-                            <div class="trainers__slide-info">
-                                <strong>Иван Иванович Иванов</strong>
-                                <span>Силовые тренировки</span>
+                            <div class="trainers__slide-content">
+                                <div class="trainers__slide-info">
+                                    <strong>Иван Иванович Иванов</strong>
+                                    <span>Силовые тренировки</span>
+                                </div>
+                                <a href="" class="btn trainers__slide-btn">
+                                    Записаться
+                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
+                                            fill="#F3ECE4"
+                                        />
+                                    </svg>
+                                </a>
                             </div>
-                            <a href="" class="btn trainers__slide-btn">
-                                Записаться
-                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
-                                        fill="#F3ECE4"
-                                    />
-                                </svg>
-                            </a>
                         </div>
                         <div class="trainers__slide swiper-slide" data-modal-open="modal-1" data-trainer="2">
                             <a href="" class="trainers__slide-link"></a>
                             <img src="../images/trainer.png" alt="" />
-                            <div class="trainers__slide-info">
-                                <strong>Иван Иванович Иванов</strong>
-                                <span>Силовые тренировки</span>
+                            <div class="trainers__slide-content">
+                                <div class="trainers__slide-info">
+                                    <strong>Иван Иванович Иванов</strong>
+                                    <span>Силовые тренировки</span>
+                                </div>
+                                <a href="" class="btn trainers__slide-btn">
+                                    Записаться
+                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
+                                            fill="#F3ECE4"
+                                        />
+                                    </svg>
+                                </a>
                             </div>
-                            <a href="" class="btn trainers__slide-btn">
-                                Записаться
-                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
-                                        fill="#F3ECE4"
-                                    />
-                                </svg>
-                            </a>
                         </div>
                         <div class="trainers__slide swiper-slide" data-modal-open="modal-1" data-trainer="3">
                             <a href="" class="trainers__slide-link"></a>
                             <img src="../images/trainer.png" alt="" />
-                            <div class="trainers__slide-info">
-                                <strong>Иван Иванович Иванов</strong>
-                                <span>Силовые тренировки</span>
+                            <div class="trainers__slide-content">
+                                <div class="trainers__slide-info">
+                                    <strong>Иван Иванович Иванов</strong>
+                                    <span>Силовые тренировки</span>
+                                </div>
+                                <a href="" class="btn trainers__slide-btn">
+                                    Записаться
+                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
+                                            fill="#F3ECE4"
+                                        />
+                                    </svg>
+                                </a>
                             </div>
-                            <a href="" class="btn trainers__slide-btn">
-                                Записаться
-                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
-                                        fill="#F3ECE4"
-                                    />
-                                </svg>
-                            </a>
                         </div>
                         <div class="trainers__slide swiper-slide" data-modal-open="modal-1" data-trainer="4">
                             <a href="" class="trainers__slide-link"></a>
                             <img src="../images/trainer.png" alt="" />
-                            <div class="trainers__slide-info">
-                                <strong>Иван Иванович Иванов</strong>
-                                <span>Силовые тренировки</span>
+                            <div class="trainers__slide-content">
+                                <div class="trainers__slide-info">
+                                    <strong>Иван Иванович Иванов</strong>
+                                    <span>Силовые тренировки</span>
+                                </div>
+                                <a href="" class="btn trainers__slide-btn">
+                                    Записаться
+                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
+                                            fill="#F3ECE4"
+                                        />
+                                    </svg>
+                                </a>
                             </div>
-                            <a href="" class="btn trainers__slide-btn">
-                                Записаться
-                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
-                                        fill="#F3ECE4"
-                                    />
-                                </svg>
-                            </a>
                         </div>
                         <div class="trainers__slide swiper-slide" data-modal-open="modal-1" data-trainer="5">
                             <a href="" class="trainers__slide-link"></a>
                             <img src="../images/trainer.png" alt="" />
-                            <div class="trainers__slide-info">
-                                <strong>Иван Иванович Иванов</strong>
-                                <span>Силовые тренировки</span>
+                            <div class="trainers__slide-content">
+                                <div class="trainers__slide-info">
+                                    <strong>Иван Иванович Иванов</strong>
+                                    <span>Силовые тренировки</span>
+                                </div>
+                                <a href="" class="btn trainers__slide-btn">
+                                    Записаться
+                                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
+                                            fill="#F3ECE4"
+                                        />
+                                    </svg>
+                                </a>
                             </div>
-                            <a href="" class="btn trainers__slide-btn">
-                                Записаться
-                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.33331 14.6666V17.3333H21.3333L14 24.6666L15.8933 26.5599L26.4533 15.9999L15.8933 5.43994L14 7.33327L21.3333 14.6666H5.33331Z"
-                                        fill="#F3ECE4"
-                                    />
-                                </svg>
-                            </a>
                         </div>
                     </div>
+                    <div class="trainers__pagination swiper-pagination slider-pagination"></div>
                 </div>
             </section>
-            <section class="tariffs dark">
+            <section id="tariffs" class="tariffs dark">
                 <div class="container">
                     <img class="tariffs__bg" src="../images/bg/tariffs.png" alt="" />
                     <h3 class="section-title">Выбирай свой путь силы</h3>
@@ -1745,7 +1828,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="contacts">
+            <section id="contacts" class="contacts">
                 <div class="container">
                     <div class="contacts__description">
                         <h3 class="section-title">Свяжитесь с нами</h3>
@@ -1773,7 +1856,7 @@
                     </div>
                 </div>
             </section>
-            <section class="reviews dark">
+            <section id="reviews" class="reviews dark">
                 <div class="reviews__description">
                     <h3 class="section-title">Говорят те, <br />кто уже начал <br />свой путь силы</h3>
                     <svg class="reviews__icon" width="100" height="78" viewBox="0 0 100 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1881,6 +1964,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="reviews__pagination swiper-pagination slider-pagination"></div>
                     </div>
                 </div>
             </section>
