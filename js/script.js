@@ -267,4 +267,11 @@ $(document).ready(function () {
             .find(".custom-option[data-value='" + $(this).attr("data-trainer") + "']")
             .click();
     });
+
+    //=================== Отключение прелоадера ============
+
+    $(".preloader").fadeOut(400, function () {
+        $(this).addClass("hidden");
+        $("html").removeClass("no-scroll");
+    });
 });
